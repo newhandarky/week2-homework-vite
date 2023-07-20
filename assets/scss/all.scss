@@ -1,12 +1,12 @@
 // base
-@import "./base/reset.scss";
+@import "./base/reset";
 @import "./base/variable";
-@import "./base/generic.scss";
+@import "./base/generic";
 // utils
-@import "./utils/grid-test.scss";
+@import "./utils/grid-test";
 @import "./utils/mixin";
 // header, footer
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import './layout/header';
+@import './layout/footer';
 // pages
-@import './pages/index.scss';
+@import './pages/index';

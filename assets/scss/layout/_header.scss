@@ -1,4 +1,9 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  padding-top: 2.5rem;
+  &__link{
+    color: $header-nav-color;
+    &:hover{
+      color: $active-color;
+    }
+  }
 }

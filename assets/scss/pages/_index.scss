@@ -1,4 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
-h1{
-  color: red;
+
+body {
+    line-height: 1.5;
+    font-family: 'Bruno Ace SC', cursive, serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+
+.block1{
+    padding: 4.5rem 0;
+    &__article{
+        h1{
+            color: $active-color;
+            font-size: 8rem;
+        }
+    }
+    &__link{
+        display: inline-block;
+        &:hover{
+            background: $active-color;
+        }
+    }
+}
+
+.block2{
+    padding: 10rem 0;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+    &__text{
+        margin-top: 2.25rem;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    &__sparkle{
+        img{
+            margin-right: 1rem;
+        }
+    }
+}
+
+.block3{
+    padding: 10rem 0;
+    &__card{
+        :nth-child(3),
+        :last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__card__num{
+        font-size: 1.25rem;
+    }
+    &__card__h3{
+        font-size: 1.25rem;
+        margin: 0.25rem 0;
+    }
+    &__article__text{
+        margin-top: 2.25rem;
+        font-size: 1.5rem;
+    }
+    &__card__item{
+        max-width: 306px;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        border: 1px solid #E3E3E3;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+    }
+}
+
+.block4{
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+    &__arrow{
+        margin-left: 1rem;
+    }
+    &__logo{
+        width: 162px;
+        height: 162px;
+        &:hover{
+            @include img-hover-shadow;
+        }
+    }
+}
+
+.block5{
+    padding: 10rem 0;
+    &__title{
+        margin-bottom: 1rem;
+    }
+    &__arrow--hidden{
+        display: none;
+    }
+    &__link{
+        display: inline-block;
+        &:hover{
+            background: $active-color;
+            color: $dark-color;
+            .block5__arrow{
+                display: none;
+                &--hidden{
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }

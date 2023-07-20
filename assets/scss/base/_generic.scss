@@ -1,7 +1,3 @@
-body {
-    line-height: 1.5;
-    font-family: 'Bruno Ace SC', cursive, serif;
-}
 
 a {
     text-decoration: none;
@@ -15,13 +11,25 @@ img {
     display: flex;
 }
 
-// justify-content相關
+.fd-column{
+    flex-direction: column;
+}
+
+// 對齊相關
 .jc-center{
     justify-content: center;
 }
 
+.jc-center{
+    justify-content: end;
+}
+
 .jc-between{
     justify-content: space-between;
+}
+
+.jc-around{
+    justify-content: space-around;
 }
 
 .ai-center{
@@ -32,18 +40,20 @@ img {
     text-align: center;
 }
 
-.fd-column{
-    flex-direction: column;
+.ta-end{
+    text-align: end;
 }
+
+
 
 
 // 文字
 .title {
-    font-size: $basic-font-size * 4;
+    font-size: 4rem;
 }
 
 .medium{
-    font-size: $basic-font-size * 1.25;
+    font-size: 1.25rem;
 }
 
 // 顏色相關
@@ -55,13 +65,17 @@ img {
     color: $light-color;
 }
 
+.bg-light{
+    background: $light-color;
+}
+
 .bg-dark{
     background: $dark-color;
 }
 
 // 間距
 .basicPadding {
-    padding: $basic-block-padding 0;
+    padding: 10rem 0;
 }
 
 .mb-24{
@@ -70,4 +84,10 @@ img {
 
 .mr-12{
     margin-right: 0.75rem;
+}
+
+// 樣式
+.btn{
+    padding: 0.75rem 1.5rem;
+    border-radius: 32px;
 }
