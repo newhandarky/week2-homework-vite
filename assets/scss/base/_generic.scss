@@ -1,0 +1,73 @@
+body {
+    line-height: 1.5;
+    font-family: 'Bruno Ace SC', cursive, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+.d-flex {
+    display: flex;
+}
+
+// justify-content相關
+.jc-center{
+    justify-content: center;
+}
+
+.jc-between{
+    justify-content: space-between;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+.ta-center{
+    text-align: center;
+}
+
+.fd-column{
+    flex-direction: column;
+}
+
+
+// 文字
+.title {
+    font-size: $basic-font-size * 4;
+}
+
+.medium{
+    font-size: $basic-font-size * 1.25;
+}
+
+// 顏色相關
+.dark{
+    color: $dark-color;
+}
+
+.light{
+    color: $light-color;
+}
+
+.bg-dark{
+    background: $dark-color;
+}
+
+// 間距
+.basicPadding {
+    padding: $basic-block-padding 0;
+}
+
+.mb-24{
+    margin-bottom: 1.5rem;
+}
+
+.mr-12{
+    margin-right: 0.75rem;
+}
